@@ -5,10 +5,14 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{mountain.name}}">
+    <ion-nav-bar class="bar-dark">
+      <ion-nav-back-button></ion-nav-back-button>
+        </ion-nav-bar>
     <ion-content class="padding">
-        <img ng-src="{{mountain.face}}" style="width: 64px; height: 64px">
-        <p>
-            {{mountain.location}}
-        </p>
+        <img ng-src="{{mountain.face}}" style="width: 64px; height: 64px;">
+        <p>{{mountain.location}}</p>
+        <p>{{mountain.region}}</p>
+        <p>Elevation: {{mountain.masl}}masl</p>
+        <p>Coordinates: {{mountain.coordinates}}</p>
     </ion-content>
 </ion-view>
